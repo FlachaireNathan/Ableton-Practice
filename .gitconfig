@@ -1,0 +1,11 @@
+# ~/personal/.gitconfig.pers
+ 
+[user]
+email = nathan.flachaire@outlook.fr
+name = NathanFlachaire
+ 
+[github]
+user = NathanFlachaire
+ 
+[core]
+sshCommand = “ssh -i C:/Users/nflachaire/.ssh/remote”
