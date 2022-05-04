@@ -1,6 +1,10 @@
-# create-svelte
+# Ableton Pratice
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project is a recreation of the [Ableton] home page (https://www.frontendpractice.com/projects/ableton) without looking at the source code.
+
+All my work for this will be documented here and shared online, mostly on my twitter account throughout the implementation of this web page.
+
+**This is not in any way any kind of form trying to steal others work or whatever. There are no commercial interest in this. This is purely for practice and showcasing my skills as a front end developer.**
 
 ## Creating a project
 
