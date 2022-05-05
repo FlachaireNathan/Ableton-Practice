@@ -1,5 +1,7 @@
 /// <reference types="@sveltejs/kit" />
 
+import "./app.css";
+
 // See https://kit.svelte.dev/docs/types#app
 // for information about these interfaces
 declare namespace App {
