@@ -6,6 +6,7 @@
 
 <style>
     .header {
+        background-color: #FFFFFF;;
         width: 100%;
         display: flex;
         flex: auto;

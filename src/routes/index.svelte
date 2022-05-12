@@ -2,6 +2,7 @@
 import index1 from "./../assets/index-1.jpg";
 import index2 from "./../assets/index-2.jpg";
 import index3 from "./../assets/index-3.jpg";
+import index4 from "./../assets/index-4.jpg";
 </script>
 
 <div class="index">
@@ -22,10 +23,14 @@ import index3 from "./../assets/index-3.jpg";
     </div>
 
     <div class="img-batch-1">
-        <div class="img-index-2" style="background-image: url('{index2}')"/>
-        <div class="img-index-3" style="background-image: url('{index3}')">
-            <div class="lemonade-bg-1"/>
+        <img src="{index2}" alt="index2" class="img-index-2"/>
+        <div class="color-and-image-1 ">
+            <div class="lemonade-bg-1">
+                <img src="{index3}" alt="index3" class="img-index-3"/>
+            </div>
         </div>
+        
+        
         
     </div>
 
@@ -38,6 +43,10 @@ import index3 from "./../assets/index-3.jpg";
                 We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.
             </div>
         </div>
+    </div>
+
+    <div class="img-batch-2">
+        <div class="img-index-2" style="background-image: url('{index4}')"/>
     </div>
 
     <div class="container">
@@ -80,6 +89,7 @@ import index3 from "./../assets/index-3.jpg";
 </div>
 <style>
     .index {
+        background-color: #FFFFFF;
         overflow-y: hidden;
     }
 
@@ -89,26 +99,48 @@ import index3 from "./../assets/index-3.jpg";
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
 
     .img-batch-1 {
         position: relative;
+        height: 800px;
         padding: 30px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: block;
+        vertical-align: middle;
+        z-index: 2;
     }
 
     .img-index-2 {
-        width: 600px;
-        height: 600px;
+        position: absolute;
+        left: 10vw;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40vw;
+        max-height: 700px;
+        aspect-ratio: 1/1;
         background-size: contain;
         background: no-repeat;
+        z-index: 1;
+    }
+
+    .lemonade-bg-1 {
+        position: absolute;
+        left: 40vw;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 15vw;
+        background-color: lemonchiffon;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .img-index-3 {
-        width: 600px;
-        height: 400px;
+        position: relative;
+        max-height: 400px;
+        width: 30vw;
+        aspect-ratio: 600/363;
         background-size: contain;
         background: no-repeat;
         display: flex;
@@ -116,12 +148,7 @@ import index3 from "./../assets/index-3.jpg";
         align-items: center;
     }
 
-    .lemonade-bg-1 {
-        position: absolute;
-        background-color: lemonchiffon;
-        z-index: -1;
-        padding: 350px 500px;
-    }
+    
 
     .image {
         width: 100%;
@@ -144,13 +171,6 @@ import index3 from "./../assets/index-3.jpg";
         color: blue;
     }
 
-    .big {
-        font-size: x-large;
-    }
-
-    .text-container {
-    }
-
     .big-text {
         width: 600px;
         font-size: x-large;
@@ -165,25 +185,5 @@ import index3 from "./../assets/index-3.jpg";
         letter-spacing: 1px;
         line-height: 30px;
         padding-bottom: 20px;
-    }
-
-    .image-2 {
-        width: fit-content;
-        object-fit: fill;
-    }
-
-    .image-3 {
-        width: fit-content;
-        object-fit: cover;
-    }
-
-    .image-div {
-        display: flex;
-        align-items: center;
-        padding: 100px;
-    }
-
-    .bg-yellow {
-        background-color: rgb(255, 255, 140);
     }
 </style>

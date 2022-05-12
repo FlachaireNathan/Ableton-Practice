@@ -25,6 +25,7 @@
 
 <style>
     .header {
+        background-color: white;
         width: 100%;
         display: flex;
         flex: auto;
@@ -32,6 +33,7 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: solid 1px rgb(211, 211, 211);
+        margin-bottom: 5px;
     }
 
     .header-content {
